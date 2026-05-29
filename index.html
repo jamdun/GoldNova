@@ -115,3 +115,97 @@ footer{padding:3rem 4rem;border-top:1px solid var(--border);display:flex;justify
 </style>
 </head>
 <body>
+<nav>
+  <div class="logo">
+    <span class="logo-text">Gold<span>Nova</span></span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#pricing">Pricing</a></li>
+  </ul>
+  <a href="#pricing" class="nav-cta">Get started</a>
+</nav>
+
+<section style="padding:0 4rem">
+  <div class="hero">
+    <div>
+      <div class="hero-badge">Automated Gold Trading</div>
+      <h1>Trade Gold.<br>No experience <em>needed.</em></h1>
+      <p class="hero-sub">GoldNova is a fully automated trading bot that analyses the Gold market 24/7 and executes trades on your behalf — using a proven candlestick pattern strategy.</p>
+      <div class="cta-group">
+        <a href="#pricing" class="btn-primary">Start for $49/month</a>
+        <a href="#how" class="btn-ghost">See how it works</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="card-header">
+        <span class="card-title">GoldNova Live</span>
+        <span class="live-badge">Live</span>
+      </div>
+      <div class="price-display">$3,247.80</div>
+      <div class="price-change">▲ +12.40 (+0.38%) today</div>
+      <div class="signal-box">
+        <div class="signal-label">Latest Signal</div>
+        <div class="signal-value">✦ BUY — Doji + Tweezer Bottom detected</div>
+      </div>
+      <div class="trade-row"><span class="trade-label">Today's trade</span><span class="trade-profit">+$847</span></div>
+      <div class="trade-row"><span class="trade-label">This week</span><span class="trade-profit">+$2,340</span></div>
+      <div class="trade-row"><span class="trade-label">Win rate (30d)</span><span class="trade-profit">64%</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="stats-inner">
+    <div class="stat"><span class="stat-num">15m</span><span class="stat-label">Signal check interval</span></div>
+    <div class="stat"><span class="stat-num">8</span><span class="stat-label">Pattern types analysed</span></div>
+    <div class="stat"><span class="stat-num">1.5:1</span><span class="stat-label">Risk to reward ratio</span></div>
+    <div class="stat"><span class="stat-num">3min</span><span class="stat-label">Setup time</span></div>
+  </div>
+</div>
+<section class="section" id="features">
+  <div class="section-label">Why GoldNova</div>
+  <h2 class="section-title">Built for people,<br>not programmers.</h2>
+  <p class="section-sub">You don't need to know anything about trading. GoldNova handles the analysis, the timing, and the execution.</p>
+  <div class="features">
+    <div class="feature"><div class="feature-icon">⚡</div><h3>Fully automated</h3><p>Set it up once and let it run. The bot monitors the market every 15 minutes and trades when conditions are right.</p></div>
+    <div class="feature"><div class="feature-icon">🎯</div><h3>Proven strategy</h3><p>Uses 8 institutional-grade candlestick patterns combined with EMA trend filters and RSI to confirm every signal.</p></div>
+    <div class="feature"><div class="feature-icon">🛡</div><h3>Built-in risk control</h3><p>Every trade has a hard stop loss and take profit. The bot never risks more than you set. Your capital is always protected.</p></div>
+    <div class="feature"><div class="feature-icon">🕐</div><h3>Session-aware</h3><p>Only trades during London and New York sessions — the most liquid and predictable times for Gold.</p></div>
+    <div class="feature"><div class="feature-icon">📊</div><h3>Full transparency</h3><p>Every decision is logged in plain English. You'll always know exactly why a trade was taken or skipped.</p></div>
+    <div class="feature"><div class="feature-icon">🔑</div><h3>Your account, your money</h3><p>The bot connects directly to your Capital.com account via API. We never touch your funds.</p></div>
+  </div>
+</section>
+
+<section class="section" id="how" style="padding-top:0">
+  <div class="how">
+    <div>
+      <div class="section-label">Setup</div>
+      <h2 class="section-title">Running in<br>3 minutes.</h2>
+      <p class="section-sub">Our setup wizard handles everything. No coding required.</p>
+      <div class="steps">
+        <div class="step"><div class="step-num">01</div><div><h3>Download GoldNova</h3><p>You'll receive a download link and licence key by email after subscribing.</p></div></div>
+        <div class="step"><div class="step-num">02</div><div><h3>Run the setup wizard</h3><p>One command: <code style="color:var(--gold);font-size:0.8rem">python setup.py</code> — it walks you through everything step by step.</p></div></div>
+        <div class="step"><div class="step-num">03</div><div><h3>Start trading</h3><p>The bot launches automatically and begins monitoring the market. You're done.</p></div></div>
+      </div>
+    </div>
+    <div class="terminal">
+      <div class="terminal-bar"><div class="dot dot-r"></div><div class="dot dot-y"></div><div class="dot dot-g"></div></div>
+      <div class="terminal-body">
+        <div class="t-dim">$ python setup.py</div>
+        <div class="t-gold">✦ Licence verified — welcome!</div>
+        <div class="t-dim">Installing packages... done</div>
+        <div class="t-dim">Connecting to Capital.com...</div>
+        <div class="t-green">✅ Authenticated</div>
+        <div class="t-dim">─────────────────────────────</div>
+        <div class="t-white">Candle close: 09:00 UTC</div>
+        <div class="t-gold">Signal: BUY</div>
+        <div class="t-dim">Doji ↑ + Tweezer Bot | RSI: 48.3</div>
+        <div class="t-green">✅ Trade placed — size: 67 units</div>
+        <div class="t-dim">TP: 11.25pts | SL: 7.5pts | Trail: ON</div>
+        <div class="t-dim">⏳ Next check in 897s...</div>
+      </div>
+    </div>
+  </div>
+</section>
