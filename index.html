@@ -3,15 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>GoldNova — Automated Gold Trading Bot</title>
-<meta name="description" content="GoldNova is a fully automated gold trading bot that analyses the XAU/USD market 24/7 and executes trades on your behalf. No experience needed. From $49/month.">
-<meta name="keywords" content="GoldNova, gold trading bot, automated gold trading, XAU/USD bot, algorithmic trading, gold trading software, trading bot UK">
-<meta name="robots" content="index, follow">
-<link rel="canonical" href="https://jamdun.github.io/GoldNova/">
-<meta property="og:title" content="GoldNova — Automated Gold Trading Bot">
-<meta property="og:description" content="Fully automated gold trading bot. Analyses the market 24/7 and trades on your behalf. No experience needed. From $49/month.">
-<meta property="og:url" content="https://jamdun.github.io/GoldNova/">
-<meta property="og:type" content="website">
+<title>GoldNova — Automated Gold Trading</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
@@ -28,8 +20,10 @@
 }
 body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;font-weight:300;line-height:1.7;overflow-x:hidden}
 h1,h2,h3{font-family:'Playfair Display',serif;font-weight:600}
+
 nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 4rem;border-bottom:1px solid var(--border);position:sticky;top:0;background:rgba(10,10,11,0.92);backdrop-filter:blur(12px);z-index:100}
 .logo{display:flex;align-items:center;gap:0.75rem}
+.logo img{height:48px;width:auto}
 .logo-text{font-family:'Playfair Display',serif;font-size:1.4rem;color:var(--gold);letter-spacing:0.02em}
 .logo-text span{color:var(--text);font-weight:400}
 .nav-links{display:flex;gap:2.5rem;list-style:none}
@@ -37,6 +31,7 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 4
 .nav-links a:hover{color:var(--text)}
 .nav-cta{background:var(--gold);color:#000;padding:0.6rem 1.5rem;border-radius:4px;font-size:0.9rem;font-weight:500;text-decoration:none;transition:background 0.2s}
 .nav-cta:hover{background:var(--gold-light)}
+
 .hero{padding:7rem 4rem 5rem;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
 .hero-badge{display:inline-flex;align-items:center;gap:0.5rem;background:rgba(201,168,76,0.1);border:1px solid rgba(201,168,76,0.3);color:var(--gold);padding:0.4rem 1rem;border-radius:20px;font-size:0.8rem;margin-bottom:2rem;letter-spacing:0.05em}
 .hero-badge::before{content:'';width:6px;height:6px;border-radius:50%;background:var(--gold);display:inline-block;animation:pulse 2s infinite}
@@ -49,6 +44,7 @@ h1 em{font-style:normal;color:var(--gold)}
 .btn-primary:hover{background:var(--gold-light);transform:translateY(-1px)}
 .btn-ghost{color:var(--muted);font-size:0.9rem;text-decoration:none;border-bottom:1px solid var(--border);padding-bottom:2px;transition:color 0.2s}
 .btn-ghost:hover{color:var(--text)}
+
 .hero-card{background:var(--bg3);border:1px solid var(--border);border-radius:12px;padding:1.5rem;position:relative;overflow:hidden}
 .hero-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,transparent,var(--gold),transparent)}
 .card-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:1.5rem}
@@ -64,21 +60,25 @@ h1 em{font-style:normal;color:var(--gold)}
 .trade-row:last-child{border-bottom:none}
 .trade-label{color:var(--muted)}
 .trade-profit{color:#4CAF82;font-weight:500}
+
 .stats{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:3rem 4rem}
 .stats-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:2rem}
 .stat{text-align:center;padding:1.5rem}
 .stat-num{font-family:'Playfair Display',serif;font-size:2.5rem;color:var(--gold);display:block;margin-bottom:0.3rem}
 .stat-label{color:var(--muted);font-size:0.85rem}
+
 .section{padding:6rem 4rem;max-width:1200px;margin:0 auto}
 .section-label{font-size:0.75rem;letter-spacing:0.15em;text-transform:uppercase;color:var(--gold);margin-bottom:1rem}
 .section-title{font-size:2.5rem;margin-bottom:1rem;line-height:1.2}
 .section-sub{color:var(--muted);font-size:1rem;max-width:500px;margin-bottom:3rem}
+
 .features{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .feature{background:var(--bg3);border:1px solid var(--border);border-radius:10px;padding:2rem;transition:border-color 0.2s}
 .feature:hover{border-color:var(--gold-dim)}
 .feature-icon{width:40px;height:40px;background:rgba(201,168,76,0.1);border-radius:8px;display:flex;align-items:center;justify-content:center;margin-bottom:1.2rem;font-size:1.2rem}
 .feature h3{font-size:1.05rem;margin-bottom:0.6rem;font-family:'DM Sans',sans-serif;font-weight:500}
 .feature p{color:var(--muted);font-size:0.875rem;line-height:1.7}
+
 .how{display:grid;grid-template-columns:1fr 1fr;gap:6rem;align-items:center}
 .steps{display:flex;flex-direction:column;gap:0}
 .step{display:flex;gap:1.5rem;padding:1.5rem 0;border-bottom:1px solid var(--border)}
@@ -92,6 +92,7 @@ h1 em{font-style:normal;color:var(--gold)}
 .dot-r{background:#E24B4A}.dot-y{background:#E8C97A}.dot-g{background:#4CAF82}
 .terminal-body{padding:1.2rem 1.5rem;font-family:monospace;font-size:0.8rem;line-height:2}
 .t-dim{color:var(--muted)}.t-gold{color:var(--gold)}.t-green{color:#4CAF82}.t-white{color:var(--text)}
+
 .pricing{text-align:center;padding:6rem 4rem;background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
 .pricing-inner{max-width:500px;margin:0 auto}
 .price-card{background:var(--bg3);border:1px solid var(--gold-dim);border-radius:16px;padding:3rem;position:relative;overflow:hidden;margin-top:3rem}
@@ -105,8 +106,10 @@ h1 em{font-style:normal;color:var(--gold)}
 .btn-gold{display:block;background:var(--gold);color:#000;text-align:center;padding:1rem;border-radius:6px;font-weight:500;font-size:1rem;text-decoration:none;transition:all 0.2s;margin-top:1.5rem}
 .btn-gold:hover{background:var(--gold-light)}
 .price-note{color:var(--muted);font-size:0.8rem;margin-top:1rem}
+
 footer{padding:3rem 4rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
 .footer-logo{display:flex;align-items:center;gap:0.5rem}
+.footer-logo img{height:36px;width:auto}
 .footer-logo-text{font-family:'Playfair Display',serif;color:var(--gold);font-size:1.1rem}
 .footer-note{color:var(--muted);font-size:0.8rem;max-width:400px;text-align:center;line-height:1.6}
 .footer-links{display:flex;gap:1.5rem}
@@ -115,6 +118,7 @@ footer{padding:3rem 4rem;border-top:1px solid var(--border);display:flex;justify
 </style>
 </head>
 <body>
+
 <nav>
   <div class="logo">
     <span class="logo-text">Gold<span>Nova</span></span>
@@ -164,6 +168,7 @@ footer{padding:3rem 4rem;border-top:1px solid var(--border);display:flex;justify
     <div class="stat"><span class="stat-num">3min</span><span class="stat-label">Setup time</span></div>
   </div>
 </div>
+
 <section class="section" id="features">
   <div class="section-label">Why GoldNova</div>
   <h2 class="section-title">Built for people,<br>not programmers.</h2>
@@ -209,6 +214,7 @@ footer{padding:3rem 4rem;border-top:1px solid var(--border);display:flex;justify
     </div>
   </div>
 </section>
+
 <section class="pricing" id="pricing">
   <div class="pricing-inner">
     <div class="section-label" style="text-align:center">Pricing</div>
@@ -239,7 +245,7 @@ footer{padding:3rem 4rem;border-top:1px solid var(--border);display:flex;justify
   <div class="footer-note">Trading involves risk. Past performance is not indicative of future results. GoldNova is a tool, not financial advice.</div>
   <div class="footer-links">
     <a href="terms.html">Terms</a>
-    <a href="privacy.html">Privacy</a>
+    <a href="#">Privacy</a>
     <a href="#">Support</a>
   </div>
 </footer>
